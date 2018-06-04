@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C150273920C4CEBF00C652EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150273820C4CEBF00C652EA /* AppDelegate.swift */; };
+		C150273B20C4CEBF00C652EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150273A20C4CEBF00C652EA /* ViewController.swift */; };
+		C150274020C4CEC000C652EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C150273F20C4CEC000C652EA /* Assets.xcassets */; };
+		C150274320C4CEC000C652EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C150274120C4CEC000C652EA /* LaunchScreen.storyboard */; };
+		C150274E20C4CEC000C652EA /* HolyCowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150274D20C4CEC000C652EA /* HolyCowTests.swift */; };
+		C150275920C4CEC000C652EA /* HolyCowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150275820C4CEC000C652EA /* HolyCowUITests.swift */; };
+		C150276820C4D34500C652EA /* HolyCowRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150276720C4D34500C652EA /* HolyCowRootViewController.swift */; };
+		C150276C20C4E4DB00C652EA /* AppNavCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150276B20C4E4DB00C652EA /* AppNavCoordinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C150274A20C4CEC000C652EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C150272D20C4CEBF00C652EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C150273420C4CEBF00C652EA;
+			remoteInfo = HolyCow;
+		};
+		C150275520C4CEC000C652EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C150272D20C4CEBF00C652EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C150273420C4CEBF00C652EA;
+			remoteInfo = HolyCow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C150273520C4CEBF00C652EA /* HolyCow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HolyCow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C150273820C4CEBF00C652EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C150273A20C4CEBF00C652EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C150273F20C4CEC000C652EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C150274220C4CEC000C652EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C150274420C4CEC000C652EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C150274920C4CEC000C652EA /* HolyCowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolyCowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C150274D20C4CEC000C652EA /* HolyCowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolyCowTests.swift; sourceTree = "<group>"; };
+		C150274F20C4CEC000C652EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C150275420C4CEC000C652EA /* HolyCowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolyCowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C150275820C4CEC000C652EA /* HolyCowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolyCowUITests.swift; sourceTree = "<group>"; };
+		C150275A20C4CEC000C652EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C150276720C4D34500C652EA /* HolyCowRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolyCowRootViewController.swift; sourceTree = "<group>"; };
+		C150276B20C4E4DB00C652EA /* AppNavCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavCoordinator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C150273220C4CEBF00C652EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C150274620C4CEC000C652EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C150275120C4CEC000C652EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C150272C20C4CEBF00C652EA = {
+			isa = PBXGroup;
+			children = (
+				C150273720C4CEBF00C652EA /* HolyCow */,
+				C150274C20C4CEC000C652EA /* HolyCowTests */,
+				C150275720C4CEC000C652EA /* HolyCowUITests */,
+				C150273620C4CEBF00C652EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C150273620C4CEBF00C652EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C150273520C4CEBF00C652EA /* HolyCow.app */,
+				C150274920C4CEC000C652EA /* HolyCowTests.xctest */,
+				C150275420C4CEC000C652EA /* HolyCowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C150273720C4CEBF00C652EA /* HolyCow */ = {
+			isa = PBXGroup;
+			children = (
+				C150276620C4D32400C652EA /* Coordinators */,
+				C150273820C4CEBF00C652EA /* AppDelegate.swift */,
+				C150273A20C4CEBF00C652EA /* ViewController.swift */,
+				C150273F20C4CEC000C652EA /* Assets.xcassets */,
+				C150274120C4CEC000C652EA /* LaunchScreen.storyboard */,
+				C150274420C4CEC000C652EA /* Info.plist */,
+				C150276B20C4E4DB00C652EA /* AppNavCoordinator.swift */,
+			);
+			path = HolyCow;
+			sourceTree = "<group>";
+		};
+		C150274C20C4CEC000C652EA /* HolyCowTests */ = {
+			isa = PBXGroup;
+			children = (
+				C150274D20C4CEC000C652EA /* HolyCowTests.swift */,
+				C150274F20C4CEC000C652EA /* Info.plist */,
+			);
+			path = HolyCowTests;
+			sourceTree = "<group>";
+		};
+		C150275720C4CEC000C652EA /* HolyCowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C150275820C4CEC000C652EA /* HolyCowUITests.swift */,
+				C150275A20C4CEC000C652EA /* Info.plist */,
+			);
+			path = HolyCowUITests;
+			sourceTree = "<group>";
+		};
+		C150276620C4D32400C652EA /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C150276720C4D34500C652EA /* HolyCowRootViewController.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C150273420C4CEBF00C652EA /* HolyCow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C150275D20C4CEC000C652EA /* Build configuration list for PBXNativeTarget "HolyCow" */;
+			buildPhases = (
+				C150273120C4CEBF00C652EA /* Sources */,
+				C150273220C4CEBF00C652EA /* Frameworks */,
+				C150273320C4CEBF00C652EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HolyCow;
+			productName = HolyCow;
+			productReference = C150273520C4CEBF00C652EA /* HolyCow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C150274820C4CEC000C652EA /* HolyCowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C150276020C4CEC000C652EA /* Build configuration list for PBXNativeTarget "HolyCowTests" */;
+			buildPhases = (
+				C150274520C4CEC000C652EA /* Sources */,
+				C150274620C4CEC000C652EA /* Frameworks */,
+				C150274720C4CEC000C652EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C150274B20C4CEC000C652EA /* PBXTargetDependency */,
+			);
+			name = HolyCowTests;
+			productName = HolyCowTests;
+			productReference = C150274920C4CEC000C652EA /* HolyCowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C150275320C4CEC000C652EA /* HolyCowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C150276320C4CEC000C652EA /* Build configuration list for PBXNativeTarget "HolyCowUITests" */;
+			buildPhases = (
+				C150275020C4CEC000C652EA /* Sources */,
+				C150275120C4CEC000C652EA /* Frameworks */,
+				C150275220C4CEC000C652EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C150275620C4CEC000C652EA /* PBXTargetDependency */,
+			);
+			name = HolyCowUITests;
+			productName = HolyCowUITests;
+			productReference = C150275420C4CEC000C652EA /* HolyCowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C150272D20C4CEBF00C652EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "G Dev";
+				TargetAttributes = {
+					C150273420C4CEBF00C652EA = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					C150274820C4CEC000C652EA = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = C150273420C4CEBF00C652EA;
+					};
+					C150275320C4CEC000C652EA = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = C150273420C4CEBF00C652EA;
+					};
+				};
+			};
+			buildConfigurationList = C150273020C4CEBF00C652EA /* Build configuration list for PBXProject "HolyCow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C150272C20C4CEBF00C652EA;
+			productRefGroup = C150273620C4CEBF00C652EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C150273420C4CEBF00C652EA /* HolyCow */,
+				C150274820C4CEC000C652EA /* HolyCowTests */,
+				C150275320C4CEC000C652EA /* HolyCowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C150273320C4CEBF00C652EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C150274320C4CEC000C652EA /* LaunchScreen.storyboard in Resources */,
+				C150274020C4CEC000C652EA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C150274720C4CEC000C652EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C150275220C4CEC000C652EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C150273120C4CEBF00C652EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C150276C20C4E4DB00C652EA /* AppNavCoordinator.swift in Sources */,
+				C150276820C4D34500C652EA /* HolyCowRootViewController.swift in Sources */,
+				C150273B20C4CEBF00C652EA /* ViewController.swift in Sources */,
+				C150273920C4CEBF00C652EA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C150274520C4CEC000C652EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C150274E20C4CEC000C652EA /* HolyCowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C150275020C4CEC000C652EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C150275920C4CEC000C652EA /* HolyCowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C150274B20C4CEC000C652EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C150273420C4CEBF00C652EA /* HolyCow */;
+			targetProxy = C150274A20C4CEC000C652EA /* PBXContainerItemProxy */;
+		};
+		C150275620C4CEC000C652EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C150273420C4CEBF00C652EA /* HolyCow */;
+			targetProxy = C150275520C4CEC000C652EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C150274120C4CEC000C652EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C150274220C4CEC000C652EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C150275B20C4CEC000C652EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C150275C20C4CEC000C652EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C150275E20C4CEC000C652EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B22825DE9D;
+				INFOPLIST_FILE = HolyCow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.gdev.com.HolyCow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C150275F20C4CEC000C652EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B22825DE9D;
+				INFOPLIST_FILE = HolyCow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.gdev.com.HolyCow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C150276120C4CEC000C652EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B22825DE9D;
+				INFOPLIST_FILE = HolyCowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.gdev.com.HolyCowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HolyCow.app/HolyCow";
+			};
+			name = Debug;
+		};
+		C150276220C4CEC000C652EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B22825DE9D;
+				INFOPLIST_FILE = HolyCowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.gdev.com.HolyCowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HolyCow.app/HolyCow";
+			};
+			name = Release;
+		};
+		C150276420C4CEC000C652EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B22825DE9D;
+				INFOPLIST_FILE = HolyCowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.gdev.com.HolyCowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HolyCow;
+			};
+			name = Debug;
+		};
+		C150276520C4CEC000C652EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B22825DE9D;
+				INFOPLIST_FILE = HolyCowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.gdev.com.HolyCowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HolyCow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C150273020C4CEBF00C652EA /* Build configuration list for PBXProject "HolyCow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C150275B20C4CEC000C652EA /* Debug */,
+				C150275C20C4CEC000C652EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C150275D20C4CEC000C652EA /* Build configuration list for PBXNativeTarget "HolyCow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C150275E20C4CEC000C652EA /* Debug */,
+				C150275F20C4CEC000C652EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C150276020C4CEC000C652EA /* Build configuration list for PBXNativeTarget "HolyCowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C150276120C4CEC000C652EA /* Debug */,
+				C150276220C4CEC000C652EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C150276320C4CEC000C652EA /* Build configuration list for PBXNativeTarget "HolyCowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C150276420C4CEC000C652EA /* Debug */,
+				C150276520C4CEC000C652EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C150272D20C4CEBF00C652EA /* Project object */;
+}

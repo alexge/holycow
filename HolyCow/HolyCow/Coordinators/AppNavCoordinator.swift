@@ -19,7 +19,7 @@ class AppNavCoordinator: NSObject {
         let profileVC = UIViewController()
         profileVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
         profileVC.view.backgroundColor = .white
-        let calendarVC = UIViewController()
+        let calendarVC = CalendarViewController()
         calendarVC.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 0)
         tabBarController.viewControllers = [profileVC,calendarVC]
     }

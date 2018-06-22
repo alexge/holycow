@@ -14,6 +14,8 @@
 		C150275920C4CEC000C652EA /* HolyCowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150275820C4CEC000C652EA /* HolyCowUITests.swift */; };
 		C150276820C4D34500C652EA /* HolyCowRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150276720C4D34500C652EA /* HolyCowRootViewController.swift */; };
 		C150276C20C4E4DB00C652EA /* AppNavCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150276B20C4E4DB00C652EA /* AppNavCoordinator.swift */; };
+		C1F3462E20DD04840012D157 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F3462D20DD04840012D157 /* CalendarViewController.swift */; };
+		C1F3463120DD2D000012D157 /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F3463020DD2D000012D157 /* UIView+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C150275A20C4CEC000C652EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C150276720C4D34500C652EA /* HolyCowRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolyCowRootViewController.swift; sourceTree = "<group>"; };
 		C150276B20C4E4DB00C652EA /* AppNavCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavCoordinator.swift; sourceTree = "<group>"; };
+		C1F3462D20DD04840012D157 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		C1F3463020DD2D000012D157 /* UIView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				C150273820C4CEBF00C652EA /* AppDelegate.swift */,
-				C150276B20C4E4DB00C652EA /* AppNavCoordinator.swift */,
 				C150276620C4D32400C652EA /* Coordinators */,
-				C1F3462C20DD04180012D157 /* HomeViewControllers */,
+				C1F3462C20DD04180012D157 /* Home */,
+				C1F3462F20DD2CE30012D157 /* Helpers */,
 				C150273F20C4CEC000C652EA /* Assets.xcassets */,
 				C150274120C4CEC000C652EA /* LaunchScreen.storyboard */,
 				C150274420C4CEC000C652EA /* Info.plist */,
@@ -130,15 +134,25 @@
 			isa = PBXGroup;
 			children = (
 				C150276720C4D34500C652EA /* HolyCowRootViewController.swift */,
+				C150276B20C4E4DB00C652EA /* AppNavCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
-		C1F3462C20DD04180012D157 /* HomeViewControllers */ = {
+		C1F3462C20DD04180012D157 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C1F3462D20DD04840012D157 /* CalendarViewController.swift */,
 			);
-			path = HomeViewControllers;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C1F3462F20DD2CE30012D157 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C1F3463020DD2D000012D157 /* UIView+Helpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +285,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1F3463120DD2D000012D157 /* UIView+Helpers.swift in Sources */,
+				C1F3462E20DD04840012D157 /* CalendarViewController.swift in Sources */,
 				C150276C20C4E4DB00C652EA /* AppNavCoordinator.swift in Sources */,
 				C150276820C4D34500C652EA /* HolyCowRootViewController.swift in Sources */,
 				C150273920C4CEBF00C652EA /* AppDelegate.swift in Sources */,

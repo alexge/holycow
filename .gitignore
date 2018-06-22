@@ -1,2 +1,45 @@
+# Xcode
+build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.moved-aside
+DerivedData
+.DS_Store
+# Xcode whitespace removal script
+*.h.bak
+*.m.bak
+Scripts/*
+Scripts
+fastlane/screenshots/*
+screenshots/*
+fastlane/report.xml
+#AppCode
+.idea/workspace.xml
+.idea/tasks.xml
+#devops
+fastlane/notes.txt
+*.log
+*.gcno
 
-*.xcuserstate
+*.gcov
+
+*.gcda
+
+*.gcno
+
+.env
+
+test_output/report.html
+
+test_output/report.junit
+
+test.rb
+
+.idea

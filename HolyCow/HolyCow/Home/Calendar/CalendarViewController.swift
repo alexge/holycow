@@ -14,8 +14,7 @@ class CalendarViewController: UIViewController {
     let calendarContainer = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
     
     let page1: UIViewController = {
-        let vc = UIViewController()
-        vc.view.backgroundColor = .blue
+        let vc = MonthViewController(month: Date(), selectedDate: nil)
         return vc
     }()
     

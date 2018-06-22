@@ -16,6 +16,9 @@
 		C150276C20C4E4DB00C652EA /* AppNavCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150276B20C4E4DB00C652EA /* AppNavCoordinator.swift */; };
 		C1F3462E20DD04840012D157 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F3462D20DD04840012D157 /* CalendarViewController.swift */; };
 		C1F3463120DD2D000012D157 /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F3463020DD2D000012D157 /* UIView+Helpers.swift */; };
+		C1F3463620DD35240012D157 /* MonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F3463520DD35240012D157 /* MonthViewController.swift */; };
+		C1F3463820DD38B50012D157 /* UITableView+Reuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F3463720DD38B50012D157 /* UITableView+Reuseable.swift */; };
+		C1F3463A20DD39120012D157 /* UICollectionView+Reuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F3463920DD39120012D157 /* UICollectionView+Reuseable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		C150276B20C4E4DB00C652EA /* AppNavCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavCoordinator.swift; sourceTree = "<group>"; };
 		C1F3462D20DD04840012D157 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		C1F3463020DD2D000012D157 /* UIView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helpers.swift"; sourceTree = "<group>"; };
+		C1F3463520DD35240012D157 /* MonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewController.swift; sourceTree = "<group>"; };
+		C1F3463720DD38B50012D157 /* UITableView+Reuseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reuseable.swift"; sourceTree = "<group>"; };
+		C1F3463920DD39120012D157 /* UICollectionView+Reuseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reuseable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +148,7 @@
 		C1F3462C20DD04180012D157 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				C1F3462D20DD04840012D157 /* CalendarViewController.swift */,
+				C1F3463420DD350B0012D157 /* Calendar */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -151,8 +157,19 @@
 			isa = PBXGroup;
 			children = (
 				C1F3463020DD2D000012D157 /* UIView+Helpers.swift */,
+				C1F3463920DD39120012D157 /* UICollectionView+Reuseable.swift */,
+				C1F3463720DD38B50012D157 /* UITableView+Reuseable.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C1F3463420DD350B0012D157 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				C1F3462D20DD04840012D157 /* CalendarViewController.swift */,
+				C1F3463520DD35240012D157 /* MonthViewController.swift */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +307,9 @@
 				C150276C20C4E4DB00C652EA /* AppNavCoordinator.swift in Sources */,
 				C150276820C4D34500C652EA /* HolyCowRootViewController.swift in Sources */,
 				C150273920C4CEBF00C652EA /* AppDelegate.swift in Sources */,
+				C1F3463820DD38B50012D157 /* UITableView+Reuseable.swift in Sources */,
+				C1F3463620DD35240012D157 /* MonthViewController.swift in Sources */,
+				C1F3463A20DD39120012D157 /* UICollectionView+Reuseable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C150273920C4CEBF00C652EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150273820C4CEBF00C652EA /* AppDelegate.swift */; };
-		C150273B20C4CEBF00C652EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150273A20C4CEBF00C652EA /* ViewController.swift */; };
 		C150274020C4CEC000C652EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C150273F20C4CEC000C652EA /* Assets.xcassets */; };
 		C150274320C4CEC000C652EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C150274120C4CEC000C652EA /* LaunchScreen.storyboard */; };
 		C150274E20C4CEC000C652EA /* HolyCowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150274D20C4CEC000C652EA /* HolyCowTests.swift */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		C150273520C4CEBF00C652EA /* HolyCow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HolyCow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C150273820C4CEBF00C652EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C150273A20C4CEBF00C652EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C150273F20C4CEC000C652EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C150274220C4CEC000C652EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C150274420C4CEC000C652EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,13 +97,13 @@
 		C150273720C4CEBF00C652EA /* HolyCow */ = {
 			isa = PBXGroup;
 			children = (
-				C150276620C4D32400C652EA /* Coordinators */,
 				C150273820C4CEBF00C652EA /* AppDelegate.swift */,
-				C150273A20C4CEBF00C652EA /* ViewController.swift */,
+				C150276B20C4E4DB00C652EA /* AppNavCoordinator.swift */,
+				C150276620C4D32400C652EA /* Coordinators */,
+				C1F3462C20DD04180012D157 /* HomeViewControllers */,
 				C150273F20C4CEC000C652EA /* Assets.xcassets */,
 				C150274120C4CEC000C652EA /* LaunchScreen.storyboard */,
 				C150274420C4CEC000C652EA /* Info.plist */,
-				C150276B20C4E4DB00C652EA /* AppNavCoordinator.swift */,
 			);
 			path = HolyCow;
 			sourceTree = "<group>";
@@ -134,6 +132,13 @@
 				C150276720C4D34500C652EA /* HolyCowRootViewController.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		C1F3462C20DD04180012D157 /* HomeViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +273,6 @@
 			files = (
 				C150276C20C4E4DB00C652EA /* AppNavCoordinator.swift in Sources */,
 				C150276820C4D34500C652EA /* HolyCowRootViewController.swift in Sources */,
-				C150273B20C4CEBF00C652EA /* ViewController.swift in Sources */,
 				C150273920C4CEBF00C652EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

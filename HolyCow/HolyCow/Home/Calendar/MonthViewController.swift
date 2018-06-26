@@ -47,32 +47,6 @@ class MonthViewController: UIViewController {
         monthView.dataSource = self
     }
     
-    func firstDayOfMonth(for date: Date) -> Date {
-        guard let dateInterval = calendar.dateInterval(of: .month, for: date) else {
-            assert(false, "No month for date")
-            return Date()
-        }
-        return dateInterval.start
-    }
-    
-    /// Returns the week of the month that the date falls in.
-    /// Return value is 1-indexed, not 0-indexed
-    ///
-    /// - Parameter date: Date to evaluate
-    /// - Returns: Week of month that the given date falls in. 0-indexed
-    func weekOfMonth(for date: Date) -> Int {
-        return calendar.component(.weekOfMonth, from: date) - 1
-    }
-    
-    /// Returns an integer value for the day of the week of the given date
-    ///
-    /// - Parameter date: Date to evaluate
-    /// - Returns: Integer value for the day of the week of the given date. Returns 1 for sunday, 7 for saturday
-    func dayOfWeek(for date: Date) -> Int {
-        return calendar.component(.weekday, from: date)
-    }
-    
-    
     private func date(for indexPath: IndexPath) -> Date? {
         guard indexPath.section < 7, indexPath.row < 7 else {
             assert(false, "invalid indexPath for cell layout")
@@ -88,7 +62,11 @@ extension MonthViewController: UICollectionViewDelegate {
 
 extension MonthViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 6
+        guard let range = calendar.range(of: .weekOfMonth, in: .month, for: month) else {
+            assert(false, "failed to get weeks from the month")
+            return 0
+        }
+        return range.upperBound - 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -101,8 +79,13 @@ extension MonthViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         let cell: CalendarDayView = monthView.dequeueReusableCell(for: indexPath)
-        let dateInt = calendar.component(.day, from: cellDate)
-        cell.bind(date: dateInt)
+        var isSelected: Bool
+        if let selected = selectedDate {
+            isSelected = calendar.compare(cellDate, to: selected, toGranularity: .day) == .orderedSame
+        } else {
+            isSelected = false
+        }
+        cell.bind(date: cellDate, currentMonth: month, calendar: calendar, isSelected: isSelected)
         return cell
     }
 }
@@ -149,8 +132,14 @@ class CalendarDayView: UICollectionViewCell, ReusableView {
         dateLabel.text = nil
     }
     
-    func bind(date: Int) {
-        dateLabel.text = "\(date)"
+    func bind(date: Date, currentMonth: Date, calendar: Calendar, isSelected: Bool) {
+        dateLabel.text = "\(calendar.component(.day, from: date))"
+        if calendar.compare(date, to: currentMonth, toGranularity: .month) != .orderedSame {
+            contentView.backgroundColor = .gray
+        }
+        if isSelected {
+            contentView.backgroundColor = .yellow
+        }
     }
 }
 

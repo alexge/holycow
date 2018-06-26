@@ -89,7 +89,7 @@ class CalendarDayView: UICollectionViewCell, ReusableView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         translatesAutoresizingMaskIntoConstraints = false
-        self.contentView.backgroundColor = .red
+        self.contentView.backgroundColor = .white
         contentView.addSubview(dateLabel)
         dateLabel.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
         dateLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true

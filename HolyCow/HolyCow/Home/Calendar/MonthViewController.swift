@@ -14,6 +14,12 @@ class MonthViewController: UIViewController {
     let month: Date
     var selectedDate: Date?
     
+    let calendar: Calendar = {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = Calendar.current.timeZone
+        return calendar
+    }()
+    
     var monthView: UICollectionView = {
         let month = UICollectionView(frame: .zero, collectionViewLayout: CalendarLayout())
         month.translatesAutoresizingMaskIntoConstraints = false
@@ -40,6 +46,40 @@ class MonthViewController: UIViewController {
         monthView.delegate = self
         monthView.dataSource = self
     }
+    
+    func firstDayOfMonth(for date: Date) -> Date {
+        guard let dateInterval = calendar.dateInterval(of: .month, for: date) else {
+            assert(false, "No month for date")
+            return Date()
+        }
+        return dateInterval.start
+    }
+    
+    /// Returns the week of the month that the date falls in.
+    /// Return value is 1-indexed, not 0-indexed
+    ///
+    /// - Parameter date: Date to evaluate
+    /// - Returns: Week of month that the given date falls in. 0-indexed
+    func weekOfMonth(for date: Date) -> Int {
+        return calendar.component(.weekOfMonth, from: date) - 1
+    }
+    
+    /// Returns an integer value for the day of the week of the given date
+    ///
+    /// - Parameter date: Date to evaluate
+    /// - Returns: Integer value for the day of the week of the given date. Returns 1 for sunday, 7 for saturday
+    func dayOfWeek(for date: Date) -> Int {
+        return calendar.component(.weekday, from: date)
+    }
+    
+    
+    private func date(for indexPath: IndexPath) -> Date? {
+        guard indexPath.section < 7, indexPath.row < 7 else {
+            assert(false, "invalid indexPath for cell layout")
+            return nil
+        }
+        return calendar.date(from: DateComponents(calendar: calendar, year: calendar.component(.year, from: month), month: calendar.component(.month, from: month), weekday: indexPath.row + 1, weekOfMonth: indexPath.section + 1))
+    }
 }
 
 extension MonthViewController: UICollectionViewDelegate {
@@ -56,8 +96,13 @@ extension MonthViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cellDate = date(for: indexPath) else {
+            assert(false, "failed date for cell")
+            return UICollectionViewCell()
+        }
         let cell: CalendarDayView = monthView.dequeueReusableCell(for: indexPath)
-        cell.bind(date: 1)
+        let dateInt = calendar.component(.day, from: cellDate)
+        cell.bind(date: dateInt)
         return cell
     }
 }
@@ -101,6 +146,7 @@ class CalendarDayView: UICollectionViewCell, ReusableView {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        dateLabel.text = nil
     }
     
     func bind(date: Int) {

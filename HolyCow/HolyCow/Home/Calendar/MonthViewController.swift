@@ -17,6 +17,8 @@ class MonthViewController: UIViewController {
     var monthView: UICollectionView = {
         let month = UICollectionView(frame: .zero, collectionViewLayout: CalendarLayout())
         month.translatesAutoresizingMaskIntoConstraints = false
+        month.backgroundColor = .gray
+        month.register(CalendarDayView.self)
         return month
     }()
     
@@ -35,6 +37,8 @@ class MonthViewController: UIViewController {
     
     private func setupMonthView() {
         monthView.fillSafeAreasInSuperview()
+        monthView.delegate = self
+        monthView.dataSource = self
     }
 }
 
@@ -53,6 +57,7 @@ extension MonthViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: CalendarDayView = monthView.dequeueReusableCell(for: indexPath)
+        cell.bind(date: 1)
         return cell
     }
 }
@@ -62,6 +67,7 @@ class CalendarLayout: UICollectionViewFlowLayout {
         super.init()
         minimumLineSpacing = 10
         minimumInteritemSpacing = 10
+        sectionInset = UIEdgeInsetsMake(10, 10, 0, 0)
         itemSize = CGSize(width: 30, height: 30)
     }
     
@@ -74,9 +80,19 @@ class CalendarLayout: UICollectionViewFlowLayout {
 class CalendarDayView: UICollectionViewCell, ReusableView {
     static var defaultReuseIdentifier: String  = "CalendarDayView"
     
+    let dateLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .red
+        translatesAutoresizingMaskIntoConstraints = false
+        self.contentView.backgroundColor = .red
+        contentView.addSubview(dateLabel)
+        dateLabel.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        dateLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -86,4 +102,19 @@ class CalendarDayView: UICollectionViewCell, ReusableView {
     override func prepareForReuse() {
         super.prepareForReuse()
     }
+    
+    func bind(date: Int) {
+        dateLabel.text = "\(date)"
+    }
 }
+
+
+
+
+
+
+
+
+
+
+

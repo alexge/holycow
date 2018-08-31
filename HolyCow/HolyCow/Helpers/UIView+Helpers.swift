@@ -18,7 +18,6 @@ extension NSLayoutConstraint {
     /// - parameter containerView: View that constrained view should fill
     /// - parameter insets: Possible insets for the view, defaults to zero
     /// - returns: Array of NSLayoutConstraints to satisfy fill
-    @objc(ov_constraintsForView:toFillView:insets:)
     class func constraints(for view: UIView, toFill containerView: UIView, insets: UIEdgeInsets = UIEdgeInsets.zero) -> [NSLayoutConstraint] {
         let top = view.topAnchor.constraint(equalTo: containerView.topAnchor, constant: insets.top)
         let bottom = view.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -insets.bottom)
@@ -34,7 +33,6 @@ extension NSLayoutConstraint {
     /// - parameter layoutGuide: Layout guide that constrained view should fill
     /// - parameter insets: Possible insets for the view, defaults to zero
     /// - returns: Array of NSLayoutConstraints to satisfy fill
-    @objc(ov_constraintsForView:toFillLayoutGuide:insets:)
     class func constraints(for view: UIView, toFill layoutGuide: UILayoutGuide, insets: UIEdgeInsets = UIEdgeInsets.zero) -> [NSLayoutConstraint] {
         let top = view.topAnchor.constraint(equalTo: layoutGuide.topAnchor, constant: insets.top)
         let bottom = view.bottomAnchor.constraint(equalTo: layoutGuide.bottomAnchor, constant: -insets.bottom)
